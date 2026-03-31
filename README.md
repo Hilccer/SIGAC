@@ -1,6 +1,6 @@
 # SIGAC
 
-Claro. Pensando no projeto como uma pequena máquina, cada arquivo cuida de uma peça diferente dela.
+Pensando no projeto como uma pequena máquina, cada arquivo cuida de uma peça diferente dela.
 
 `package.json` é a ficha técnica do projeto. Ele diz o nome do sistema, a versão e, principalmente, quais bibliotecas precisam ser instaladas. Nesse caso, o `express` cria o servidor, o `sqlite3` cuida do banco de dados e o `bcrypt` protege as senhas.
 
