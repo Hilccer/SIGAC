@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGAC - Login</title>
+  <link rel="icon" type="image/png" href="Logo SIGAC-otimizada.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#f97316">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="SIGAC">
+  <link rel="stylesheet" href="sigac.css?v=ui-refino-2026-04-26-login">
+</head>
+<body>
+  <div class="container-login">
+    <div class="login-card">
+      <div class="login-hero">
+        <div class="login-brand">
+          <img src="Logo SIGAC-otimizada.png" alt="Logo SIGAC">
+          <div>
+            <h1>SIGAC</h1>
+            <p>Sistema Integrado de Gest&atilde;o de Atividades Complementares</p>
+          </div>
+        </div>
+
+        <div class="login-hero-copy">
+          <span class="login-kicker">Portal acadêmico</span>
+          <h2>Controle atividades, certificados e oportunidades em um único lugar.</h2>
+          <p>Um acesso rápido para acompanhar validações, pendências e próximas ações sem mudar a lógica atual do sistema.</p>
+        </div>
+
+        <div class="login-hero-points" aria-label="Destaques do SIGAC">
+          <div class="hero-point">
+            <strong>Fluxo unificado</strong>
+            <p>Aluno, coordenador e administrador com jornadas claras.</p>
+          </div>
+          <div class="hero-point">
+            <strong>Experiencia objetiva</strong>
+            <p>Entre e continue de onde parou com menos ruido visual.</p>
+          </div>
+        </div>
+
+        <div class="login-hero-footer">
+          <span>Ambiente acadêmico</span>
+          <strong>2026</strong>
+        </div>
+      </div>
+
+      <div class="login-auth">
+        <section id="loginPanel" class="auth-panel login-panel-surface">
+          <form id="loginForm">
+            <div class="field">
+              <label for="loginRole">Fun&ccedil;&atilde;o</label>
+              <select id="loginRole" required>
+                <option value="aluno">Aluno (Gradua&ccedil;&atilde;o e P&oacute;s)</option>
+                <option value="coordenador">Coordenador</option>
+                <option value="superadmin">Administrador</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input id="email" type="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="field">
+              <div class="field-heading">
+                <label for="senha">Senha</label>
+                <a href="resetarsenha.html">Esqueceu sua senha?</a>
+              </div>
+              <input id="senha" type="password" placeholder="Digite sua senha" required>
+            </div>
+
+            <button type="submit" class="btn-login">Entrar</button>
+          </form>
+
+          <div id="loginMessage" class="message info hidden"></div>
+        </section>
+
+        <section id="registerPanel" class="login-support-panel" aria-labelledby="accessGuideTitle">
+          <div class="support-panel-heading">
+            <span class="support-panel-kicker">Acessos</span>
+            <h3 id="accessGuideTitle">Como os acessos funcionam</h3>
+          </div>
+
+          <div class="access-flow">
+            <div class="flow-step">
+              <span>1</span>
+              <div>
+                <strong>Administrador</strong>
+                <p>Cadastra cursos e libera os acessos dos coordenadores.</p>
+              </div>
+            </div>
+            <div class="flow-step">
+              <span>2</span>
+              <div>
+                <strong>Coordenador</strong>
+                <p>Cadastra alunos vinculados aos cursos sob sua responsabilidade.</p>
+              </div>
+            </div>
+            <div class="flow-step">
+              <span>3</span>
+              <div>
+                <strong>Aluno</strong>
+                <p>Entra com o acesso recebido para enviar e acompanhar atividades.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="registerMessage" class="message info hidden"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/login.js?v=ui-refino-2026-04-26-login"></script>
+  <script src="js/custom-select.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+</html>

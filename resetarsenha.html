@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGAC - Redefinir senha</title>
+  <link rel="icon" type="image/png" href="Logo SIGAC-otimizada.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#f97316">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="SIGAC">
+  <link rel="stylesheet" href="sigac.css?v=ui-refino-2026-04-25-2">
+</head>
+<body>
+  <div class="container-login">
+    <div class="login-card">
+      <div class="login-brand">
+        <img src="Logo SIGAC-otimizada.png" alt="Logo SIGAC">
+        <div>
+          <h1>Redefinir senha</h1>
+          <p>Atualize sua senha com segurança e registre a ação no ambiente do SIGAC.</p>
+        </div>
+      </div>
+
+      <form id="resetForm">
+        <div class="field">
+          <label for="email">E-mail cadastrado</label>
+          <input id="email" type="email" required>
+        </div>
+
+        <div class="actions-row" style="margin-bottom:12px;">
+          <button id="requestResetToken" type="button" class="secondary">Enviar token</button>
+        </div>
+
+        <div class="field">
+          <label for="resetToken">Token recebido</label>
+          <input id="resetToken" type="text" autocomplete="one-time-code" required>
+        </div>
+
+        <div class="field">
+          <label for="senha">Nova senha</label>
+          <input id="senha" type="password" minlength="8" required>
+        </div>
+
+        <div class="field">
+          <label for="confirmarSenha">Confirmar nova senha</label>
+          <input id="confirmarSenha" type="password" minlength="8" required>
+        </div>
+
+        <div class="actions-row">
+          <button type="submit">Salvar nova senha</button>
+          <a class="button secondary" href="loginsigac.html">Voltar ao login</a>
+        </div>
+      </form>
+
+      <div id="resetMessage" class="message info hidden"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/reset.js?v=ui-refino-2026-04-25-2"></script>
+  <script src="js/custom-select.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+</html>
